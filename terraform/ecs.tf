@@ -30,7 +30,7 @@ resource "aws_ecs_task_definition" "Task" {
   container_definitions = jsonencode([
     {
       name      = "nodejs-api-container"
-      image     = "192847931369.dkr.ecr.us-east-1.amazonaws.com/asm-api:latest"
+      image     = "192847931369.dkr.ecr.us-east-1.amazonaws.com/nodejs-api:latest"
       cpu       = 256
       memory    = 512
       essential = true
