@@ -6,9 +6,9 @@ resource "aws_security_group" "container_sg" {
   lifecycle { create_before_destroy = true }
   ingress = [
     {
-      description      = "8080 open"
-      from_port        = 8080
-      to_port          = 8080
+      description      = "3000 open"
+      from_port        = 3000
+      to_port          = 3000
       protocol         = "tcp"
       cidr_blocks      = ["0.0.0.0/0"]
       ipv6_cidr_blocks = ["::/0"]
